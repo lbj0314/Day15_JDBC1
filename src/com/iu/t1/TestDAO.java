@@ -13,7 +13,7 @@ public class TestDAO {
 		//empno, ename, sal, job
 		String user = "scott";
 		String password = "tiger";
-		String url = "jdbc:oracle:thin:@192.168.56.101:1521:xe";
+		String url = "jdbc:oracle:thin:@192.168.0.8:1521:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		//준비
 		Connection con = null;
