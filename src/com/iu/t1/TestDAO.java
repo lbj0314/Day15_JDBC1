@@ -9,7 +9,32 @@ import java.sql.Statement;
 public class TestDAO {
 	
 	public void selectTest4(String ename) {
-		//
+		//emp
+		//empno, ename, sal, job
+		String user = "scott";
+		String password = "tiger";
+		String url = "jdbc:oracle:thin:@192.168.56.101:1521:xe";
+		String driver = "oracle.jdbc.driver.OracleDriver";
+		//준비
+		Connection con = null;
+		Statement st = null;
+		ResultSet rs = null;
+		
+		try {
+			Class.forName(driver);
+			
+			con = DriverManager.getConnection(url, user, password);
+			System.out.println("Successed");
+			System.out.println("--------------------");
+			
+			String sql = "";
+			
+			st = con.createStatement();
+			rs = st.executeQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void selectTest3() {

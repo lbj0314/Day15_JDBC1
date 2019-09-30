@@ -7,7 +7,7 @@ public class TestMain {
 		testDAO.selectTest();
 //		testDAO.selectTest2();
 //		testDAO.selectTest3();
-		testDAO.selectTest4("SMITH");
+//		testDAO.selectTest4("SMITH");
 	}
 
 }
